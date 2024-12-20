@@ -2,7 +2,7 @@
 title: "LANDFIRE-Powered Assessments"
 output: 
   flexdashboard::flex_dashboard:
-    theme: yeti
+    theme: journal
     storyboard: true
     css: styles.css
 
