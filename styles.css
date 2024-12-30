@@ -3,34 +3,33 @@
 
 .navbar {
   height: 100px; /* Adjust the height as needed */
-    background-color: #22664f; /* Earthy green color */
+  background-color: #22664f; /* Earthy green color */
 }
 
 .navbar-brand {
   line-height: 100px; /* Match the height for vertical alignment */
-    font-size: 36px; /* Adjust the font size as needed */
-    color: #FFFFFF; /* Text color, you can change this if needed */
+  font-size: 36px; /* Adjust the font size as needed */
+  color: #FFFFFF; /* Text color, you can change this if needed */
 }
 
 .navbar-nav > li > a {
-    font-size: 18px; /* Adjust the font size for nav links */
-    color: #FFFFFF; /* Text color for nav links */
-    padding-top: 10px; /* Adjust the padding to make buttons shorter */
-    padding-bottom: 10px; /* Adjust the padding to make buttons shorter */
+  font-size: 18px; /* Adjust the font size for nav links */
+  color: #FFFFFF; /* Text color for nav links */
+  padding-top: 20px; /* Reduced padding to make buttons shorter */
+  padding-bottom: 20px; /* Reduced padding to make buttons shorter */
 }
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
-    background-color: #8FBC8F; /* Lighter earthy green for hover/focus state */
-    color: #FFFFFF; /* Text color for hover/focus state */
+  background-color: #8FBC8F; /* Lighter earthy green for hover/focus state */
+  color: #FFFFFF; /* Text color for hover/focus state */
 }
 
-/* Ensure buttons/tabs are styled */
 .navbar-nav > li.active > a,
 .navbar-nav > li.active > a:hover,
 .navbar-nav > li.active > a:focus {
-    background-color: #8FBC8F; /* Lighter earthy green for active state */
-    color: #FFFFFF; /* Text color for active state */
-    padding-top: 10px; /* Adjust the padding to make buttons shorter */
-    padding-bottom: 10px; /* Adjust the padding to make buttons shorter */
+  background-color: #8FBC8F; /* Lighter earthy green for active state */
+  color: #FFFFFF; /* Text color for active state */
+  padding-top: 25px; /* Reduced padding to make buttons shorter */
+  padding-bottom: 25px; /* Reduced padding to make buttons shorter */
 }
