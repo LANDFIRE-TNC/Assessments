@@ -1,0 +1,21 @@
+org_name,draw_order,display_name,year,link,partners
+arrowhead_diss,2,"Arrowhead Landscape, MN",2023,https://thenatureconservancy.github.io/mn_demo/,The Nature Conservancy
+blahi,4,Black Hills,2023,https://thenatureconservancy.github.io/blahi/,Conservation Data Lab
+copla,5,Colorado Plateau Landscape,2023,https://thenatureconservancy.github.io/copla/,Conservation Data Lab
+cup_final,6,"Central Upper Peninsula, MI",2024,https://conservation-data-lab.github.io/cup_assessment/,"Conservation Data Lab, Marquette County, MI"
+dftls_NAD1983,7,Driftless Landscape,2023,https://thenatureconservancy.github.io/driftless/,The Nature Conservancy
+flathead_nf,8,Flathead National Forest,2023,https://thenatureconservancy.github.io/flathead/,USDA Forest Service
+gcnp,9,Grand Canyon National Park,2023,https://thenatureconservancy.github.io/gcnp/,National Park Service
+glaba_dissolve,20,Great Lakes Basin,2024,https://thenatureconservancy.github.io/glaba_subs/,USDA Forest Service
+hiawatha_dissolve,10,Hiawatha National Forest,2024,https://thenatureconservancy.github.io/HiawathaNF_2024/,USDA Forest Service
+hoosier,13,Hoosier National Forest,2024,https://thenatureconservancy.github.io/Hoosier_NF/,USDA Forest Service
+huron_manistee,11,Huron-Manistee National Forest,2023,https://claireburtrum.github.io/huronmanistee/,USDA Forest Service
+mz15,17,LANDFIRE Map Zone 15,2023,https://thenatureconservancy.github.io/mz15/,Ecological Restoration Institute
+nnmpla,18,Northern New Mexico Plateau,2023,https://thenatureconservancy.github.io/nnmpla/,Conservation Data Lab
+Northern_LP_Boundary,14,"Northern Lower Peninsula Landscape, MI",2023,https://gjknowlton.github.io/northernMI_LF/,Michigan Department of Natural Resources
+ottawa,15,Ottawa National Forest,2023,https://thenatureconservancy.github.io/OttawaNF2023/,USDA Forest Service
+ouachita_nf,21,Ouachita National Forest,2024,https://thenatureconservancy.github.io/ouachita_nf/,The Nature Conservancy
+rogue_dissolve,22,"Rogue River Basin, OR",2024,https://thenatureconservancy.github.io/rrb/,The Nature Conservancy
+soro_diss,23,Southern Rockies Landscape,2023,https://thenatureconservancy.github.io/soro/,Conservation Data Lab
+wumo_diss,24,Wasatch and Uinta Mountains Landscape,2023,https://thenatureconservancy.github.io/wumo/,Conservation Data Lab
+wyba,25,Wyoming Basins Landscape,2023,https://thenatureconservancy.github.io/wyba/,Conservation Data Lab
