@@ -53,3 +53,8 @@ st_write(assessments_shp, "data/assessments.shp",
 
 
 ## Note names are abbreviated
+
+# Add new polygons to assessments shapefile ----
+
+# add info in assessments.csv in excel
+
