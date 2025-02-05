@@ -40,7 +40,7 @@ map <- leaflet() %>%
     fillOpacity = 0.3,
     popup = ~paste(
       "<b>Landscape:</b> ", dsply_n, "<br>",
-      "<b>URL for full report:</b> <a href='", link, "' target='_blank'>", link, "</a>"
+      "<b>Click for full report:</b> <a href='", link, "' target='_blank'>", link, "</a>"
     )) %>%
   setView(lng = -96, lat = 37.8, zoom = 4)
 

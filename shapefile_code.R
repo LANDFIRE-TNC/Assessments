@@ -52,4 +52,4 @@ st_write(assessments_shp, "data/assessments.shp",
          delete_layer = TRUE)
 
 
-## Note names are abbriviated
+## Note names are abbreviated
