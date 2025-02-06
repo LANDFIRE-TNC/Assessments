@@ -13,14 +13,7 @@ library(tidyverse)
 ## note you are messing with the master file
 
 assessments_shp <- st_read("data/assessments.shp") %>%
-  st_transform(crs = 4326) %>%
-  select(-c(
-    drw_rdr,
-    dsply_n,
-    year,
-    link,
-    partnrs
-  ))
+  st_transform(crs = 4326) 
 
 
 ## note, I removed all but necessary fields as I planned to join new ones in below
@@ -53,3 +46,23 @@ st_write(assessments_shp, "data/assessments.shp",
 
 
 ## Note names are abbreviated
+
+# Add new polygons to assessments shapefile ----
+
+# add info in assessments.csv in excel !!
+
+# st.croix
+
+st_croix_shp <- st_read("data/st_croix.shp") %>%
+  st_transform(crs = 4326) %>%
+  select(c(AREA_NAME,  
+           geometry)) %>%  # need to look at fields and change this as needed only keeping the name and geometry
+  rename(org_nam = AREA_NAME) %>%
+  left_join(assessments_attributes, by = 'org_nam')
+
+
+# add st.croix to assessments shp
+assessments_shp <- rbind(assessments_shp, st_croix_shp)
+
+st_write(assessments_shp, "data/assessments.shp", 
+         delete_layer = TRUE)

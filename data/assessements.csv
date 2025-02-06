@@ -1,4 +1,4 @@
-org_name,draw_order,display_name,year,link,partners
+org_nam,drw_rdr,dsply_n,year,link,partnrs
 arrowhead_diss,2,"Arrowhead Landscape, MN",2023,https://thenatureconservancy.github.io/mn_demo/,The Nature Conservancy
 blahi,4,Black Hills,2023,https://thenatureconservancy.github.io/blahi/,Conservation Data Lab
 copla,5,Colorado Plateau Landscape,2023,https://thenatureconservancy.github.io/copla/,Conservation Data Lab
@@ -19,3 +19,4 @@ rogue_dissolve,22,"Rogue River Basin, OR",2024,https://thenatureconservancy.gith
 soro_diss,23,Southern Rockies Landscape,2023,https://thenatureconservancy.github.io/soro/,Conservation Data Lab
 wumo_diss,24,Wasatch and Uinta Mountains Landscape,2023,https://thenatureconservancy.github.io/wumo/,Conservation Data Lab
 wyba,25,Wyoming Basins Landscape,2023,https://thenatureconservancy.github.io/wyba/,Conservation Data Lab
+St. Croix,26,"St. Croix State Park, MN",2025,https://thenatureconservancy.github.io/st_croix/,The Nature Conservancy
