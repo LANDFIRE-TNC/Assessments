@@ -92,14 +92,14 @@ Want to see what your landscape looks like in a similar format? Get in touch (se
 
 <h2>Step 1</h2>
 
-![](images/1.png){width=75%}
+![](images/1.png){width=50%}
 <br>
 
 <h2>Step 2</h2>
 <br>
 
 
-![](images/2.png){width=75%}
+![](images/2.png){width=50%}
 
 <h2>LANDFIRE Products Used</h2>
 
@@ -146,8 +146,8 @@ The Nature Conservancy (TNC) is a Major Partner in the [LANDFIRE Program](https:
 
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="images/R.png" alt="Image 1" style="width: 48%;">
-  <img src="Images/tnc.png" alt="Image 2" style="width: 48%;">
+  <img src="images/R.png" alt="Image 1" style="width: 38%;">
+  <img src="Images/tnc.png" alt="Image 2" style="width: 38%;">
 </div>
 
 
