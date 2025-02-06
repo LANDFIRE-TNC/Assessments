@@ -51,10 +51,12 @@ st_write(assessments_shp, "data/assessments.shp",
 
 # add info in assessments.csv in excel !!
 
-# st.croix
+##  st.croix  ----
 
 st_croix_shp <- st_read("data/st_croix.shp") %>%
-  st_transform(crs = 4326) %>%
+  st_transform(crs = 4326) 
+
+st_croix_shp <- st_croix_shp %>%
   select(c(AREA_NAME,  
            geometry)) %>%  # need to look at fields and change this as needed only keeping the name and geometry
   rename(org_nam = AREA_NAME) %>%
@@ -66,3 +68,30 @@ assessments_shp <- rbind(assessments_shp, st_croix_shp)
 
 st_write(assessments_shp, "data/assessments.shp", 
          delete_layer = TRUE)
+
+
+## uncompahgre nf ----
+
+uncompahgre_shp <- st_read("data/uncompahgre_nf.shp") %>%
+  st_transform(crs = 4326) 
+
+# rename the forest-too long and has commas-to name in assessments_attributes
+uncompahgre_shp$FORESTNAME[1] = "uncompahgre"
+
+# wrangle shapefile
+uncompahgre_shp <- uncompahgre_shp %>%
+  select(c(FORESTNAME,  
+           geometry)) %>%  # need to look at fields and change this as needed only keeping the name and geometry
+  rename(org_nam = FORESTNAME) %>%
+  left_join(assessments_attributes, by = 'org_nam')
+
+# add uncompahgre to assessments shp
+assessments_shp <- rbind(assessments_shp, uncompahgre_shp)
+
+plot(assessments_shp)
+
+st_write(assessments_shp, "data/assessments.shp", 
+         delete_layer = TRUE)
+  
+
+
