@@ -1,5 +1,5 @@
 ---
-title: "LANDFIRE-Powered Assessments"
+title: "LANDFIRE-Powered Landscape Assessments"
 format: dashboard
 
 ---
@@ -20,7 +20,7 @@ assessments_shp <- st_read("data/assessments.shp") %>%
 ```
 
 
-# Assessments {orientation="columns" scrolling="false"}
+# Landscape Assessments {orientation="columns" scrolling="false"}
 
 ## Column {width=60%}
 
@@ -53,29 +53,29 @@ map
 
 LANDFIRE-Powered Landscape Assessments allow users to start exploring trends, landscape conversions and natural resource management options. 
 
-Based on current [LANDFIRE Products,](https://landfire.gov/) these assessments provide a starting point for future analysis and can help users understand the context of current ecosystems conditions and the role of disturbances within the historical context of these landscapes.
+Based on current [LANDFIRE Products,](https://landfire.gov/) these assessments provide a starting point for future analysis and can help users understand the context of current ecosystem conditions and the role of disturbances within the historical context of these landscapes.
 
 <h3>Getting Started</h3>
 
-- Hover over an assessment to examine a landscape
-- Click the link to the external dashboard
-- Start exploring the individual assessment
+1. Click the landscape of interest
+2. Click the link to the external dashboard
+3. Start exploring the individual assessment
 
 Each assessment was created individually and may reflect the specific needs of the assessment partners.
 
 <h3>Why LANDFIRE?</h3>
 
-LANDFIRE provides complete, landscape-scale products using standardized legends and methodologies. These products are regularly updated and include historical information including [Biophysical Settings Products](https://landfire.gov/vegetation/bps), [Historic Fire Regime](https://landfire.gov/fire-regime) and [Historic Disturbance Products](https://landfire.gov/disturbance/hdist). 
+LANDFIRE provides complete, landscape-scale products using standardized legends and methodologies. These products are regularly updated and including historical information including [Biophysical Settings Products](https://landfire.gov/vegetation/bps), [Historic Fire Regime](https://landfire.gov/fire-regime) and [Historic Disturbance Products](https://landfire.gov/disturbance/hdist). 
 
-<h3>Why This Matters?</h3>
+<h3>Why Does This Matter?</h3>
 
 Natural resource professionals need versatile, current and continuous data to support their analysis decisions. These assessments are just a sample of what is possible when LANDFIRE products are creatively applied to natural resource questions. All maps, input datasets and further assistance can be obtained by contacting TNC Ecologist, [Randy Swaty](mailto:rswaty@tnc.org).
 
-<h3>Assessments Help Answer:</h3>
+<h3>Example questions to consider:</h3>
 
-* How have regional fire regimes changed over time? (navigate to landscape assessment of interest, explore "Past" tab) 
-* What broad vegetation trends are occurring within a landscape? (navigate to landscape assessment of interest, explore "Comparing" tab)
-* What are the most dominant lifeforms and how does this compare with local knowledge of a specific area? (navigate to landscape assessment of interest, explore "Present" tab)
+* How have regional fire regimes changed over time? (Step 1: Navigate to landscape assessment of interest, Step 2: Explore "Past" tab [see example](https://thenatureconservancy.github.io/wyba/past.html)). 
+* What broad vegetation trends are occurring within a landscape? (Step 1: Navigate to landscape assessment of interest, Step 2: Explore "Comparing" tab [see example](https://thenatureconservancy.github.io/wyba/comparing.html)).
+* What are the most dominant lifeforms and how does this compare with local knowledge of a specific area? (Step 1: Navigate to landscape assessment of interest, Step 2: Explore "Present" tab [see example](https://thenatureconservancy.github.io/wyba/present.html)).
 
 
 
@@ -83,27 +83,27 @@ Natural resource professionals need versatile, current and continuous data to su
 
 <h2>Landscape Assessment Process</h2>
 
-Creating a preliminary landscape assessments can be achieved with a little experience working in [R Studio,](https://posit.co/products/open-source/rstudio/) [QGIS,](https://qgis.org/) [GitHub](https://github.com/) and [Quarto.](https://quarto.org/)
+Creating a preliminary landscape assessment can be achieved with a little experience working in [R Studio,](https://posit.co/products/open-source/rstudio/) [QGIS,](https://qgis.org/) [GitHub](https://github.com/) and [Quarto.](https://quarto.org/)
 
-While each assessment was customized for a specific intended audience, the general order of operations remains consistent throughout. The following is a simple mock up of the two major processes used to create each assessment. By integrating automations and systems where possible, the process of creating an assessment from start-to-finish can be achieved in under 2-hours. 
+While each assessment was customized for a specific intended audience, the general order of operations remains consistent throughout. The following is a simple diagram that describes the two major processes used to create each assessment. By integrating automation where possible, the process of creating an assessment from start-to-finish can be achieved in under 2-hours. 
 
-Want to see what your landscape looks like in a similar format? Get in touch (see About page).
+Do you want to see your landscape in a similar format? [Get in touch](https://landfire-tnc.github.io/Assessments/#about).
 
 
 <h2>Step 1</h2>
 
-![](images/1.png){width=50%}
+![](images/2.png){width=50%}
 <br>
 
 <h2>Step 2</h2>
 <br>
 
 
-![](images/2.png){width=50%}
+![](images/1.png){width=50%}
 
 <h2>LANDFIRE Products Used</h2>
 
-* [BioPhysical Settings (BpS)](https://landfire.gov/vegetation/bps)
+* [Biophysical Settings Spatial Data](https://landfire.gov/vegetation/bps) and [Reference Conditions Table](https://landfire.gov/vegetation/bps-models)
 * [Existing Vegetation Cover (EVC)](https://landfire.gov/vegetation/evc)
 * [Existing Vegetation Height (EVH)](https://landfire.gov/vegetation/evh)
 * [Existing Vegetation Type](https://landfire.gov/vegetation/evt)
@@ -115,7 +115,7 @@ Want to see what your landscape looks like in a similar format? Get in touch (se
 # About  {orientation="columns" scrolling="false"}
 <h2>LANDFIRE</h2>
 
-[LANDFIRE](https://landfire.gov/) (Landscape Fire and Resource Management Planning Tools) is a shared program between the U.S. Department of Agriculture Forest Service Fire and Aviation branch and the U.S. Department of the Interior. LANDFIRE provides 25+ national landscape-scale geo-spatial products, 950 vegetation models, and a suite of tools that support all-lands planning, management, and operations. Included in the product suite are current and historic conditions including ecosystem dynamic models that can be used for conservation, fire planning, and landscape management decisions.
+[LANDFIRE](https://landfire.gov/) (Landscape Fire and Resource Management Planning Tools) is a shared program between the U.S. Department of Agriculture Forest Service Fire and Aviation branch and the U.S. Department of the Interior. LANDFIRE provides 25+ national landscape-scale geo-spatial products, 950 vegetation models, and a suite of tools that support all-lands planning, management, and operations. Included in the product suite are current and historic conditions including ecosystem dynamics models that can be used for conservation, fire planning, and landscape management decisions.
 
 <h2>The Nature Conservancy</h2>
 
@@ -131,7 +131,7 @@ The Nature Conservancy (TNC) is a Major Partner in the [LANDFIRE Program](https:
 
 <h2>Questions? LANDFIRE is here to help</h2>
 
-* Get in touch with [TNC Ecologist, Randy Swaty,](mailto:rswaty@tnc.org) the creator of these landscape assessments
+* Get in touch with [TNC Ecologist, Randy Swaty,](mailto:rswaty@tnc.org) (Landscape assessment creator and TNC Ecologist)
 
 * Ask the [LANDFIRE Helpdesk](mailto:helpdesk@landfire.gov)
 
@@ -141,7 +141,7 @@ The Nature Conservancy (TNC) is a Major Partner in the [LANDFIRE Program](https:
 
 * See how others are [putting LANDFIRE products to work](https://arcg.is/1jmKm90)
 
-* [Join the LANDFIRE Community](http://eepurl.com/cajG91)
+* [Join the LANDFIRE Newsletter 2-min read](http://eepurl.com/cajG91)
 
 
 
@@ -149,6 +149,3 @@ The Nature Conservancy (TNC) is a Major Partner in the [LANDFIRE Program](https:
   <img src="images/R.png" alt="Image 1" style="width: 38%;">
   <img src="images/tnc.png" alt="Image 2" style="width: 38%;">
 </div>
-
-
-
