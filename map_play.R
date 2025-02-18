@@ -18,18 +18,9 @@ assessments_shp <- st_read("data/assessments.shp") %>%
 
 
 
+
 tol_muted_palette <- colorFactor(c('#88CCEE', '#44AA99', '#117733', '#332288', '#DDCC77', '#999933','#CC6677', '#882255', '#AA4499', '#52504a'), assessments_shp$org_nam) # from https://zenodo.org/records/3381072
 
-# Create the Leaflet map
-
-
-# Create the Leaflet map
-# Define the color palette
-tol_muted_palette <- colorFactor(c('#88CCEE', '#44AA99', '#117733', '#332288', '#DDCC77', '#999933','#CC6677', '#882255', '#AA4499', '#52504a'), assessments_shp$org_nam) # from https://zenodo.org/records/3381072
-
-
-
-# Create the map
 map <- leaflet() %>%
   addTiles() %>%
   addPolygons(
@@ -46,13 +37,7 @@ map <- leaflet() %>%
   ) %>%
   addLayersControl(
     overlayGroups = unique(assessments_shp$dsply_n),
-    options = layersControlOptions(collapsed = FALSE)
-  ) %>%
-  addLegend(
-    position = "bottomleft",  # Move legend to the left
-    pal = tol_muted_palette,
-    values = ~org_nam,
-    title = "Legend"
+    options = layersControlOptions(collapsed = FALSE, position = "topleft")  # Change position to "topleft"
   ) %>%
   setView(lng = -96, lat = 37.8, zoom = 4)
 

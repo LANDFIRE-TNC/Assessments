@@ -9,6 +9,8 @@ format: dashboard
 library(flexdashboard)
 library(leaflet)
 library(sf)
+library(leaflet.extras)
+library(htmltools)
 
 
 # Load the shapefile
@@ -27,8 +29,7 @@ assessments_shp <- st_read("data/assessments.shp") %>%
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-
-tol_muted_palette <- colorFactor(c('#88CCEE', '#44AA99', '#117733', '#332288', '#DDCC77', '#999933','#CC6677', '#882255', '#AA4499', '#52504a'), assessments_shp$org_nam) # from https://zenodo.org/records/3381072
+tol_muted_palette <- colorFactor(c('#88CCEE', '#44AA99', '#117733', '#332288', '#DDCC77', '#999933','#CC6677', '#882255', '#AA4499', '#52504a'), assessments_shp$org_nam)
 
 # Create the map
 map <- leaflet() %>%
@@ -43,21 +44,22 @@ map <- leaflet() %>%
       "<b>Landscape:</b> ", dsply_n, "<br>",
       "<b>Click for full report:</b> <a href='", link, "' target='_blank'>", link, "</a>"
     ),
-    group = ~org_nam
+    group = ~dsply_n  # Add this line to set the group for each polygon
   ) %>%
   addLayersControl(
     overlayGroups = unique(assessments_shp$dsply_n),
-    options = layersControlOptions(collapsed = FALSE)
+    options = layersControlOptions(collapsed = TRUE, position = "topright")
   ) %>%
-  addLegend(
-    position = "bottomleft",  # Move legend to the left
-    pal = tol_muted_palette,
-    values = ~org_nam,
-    title = "Legend"
-  ) %>%
-  setView(lng = -96, lat = 37.8, zoom = 4)
+  setView(lng = -82.5, lat = 37, zoom = 4) %>%
+  htmlwidgets::onRender("
+    function() {
+      $('.leaflet-control-layers-overlays').prepend('<label style=\"text-align:center\">Completed Assessments</label>');
+    }
+  ")
 
 map
+
+
 ```
 
 ## Column 2 {width=40%}
