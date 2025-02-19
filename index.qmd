@@ -84,7 +84,7 @@ LANDFIRE provides complete, landscape-scale products using standardized legends 
 
 <h3>Why Does This Matter?</h3>
 
-Natural resource professionals need versatile, current and continuous data to support their analysis decisions. These assessments are just a sample of what is possible when LANDFIRE products are creatively applied to natural resource questions. All maps, input datasets and further assistance can be obtained by contacting TNC Ecologist, [Randy Swaty](mailto:rswaty@tnc.org).
+Natural resource professionals need versatile, current and continuous data to support their analysis decisions. These assessments are just a sample of what is possible when LANDFIRE products are creatively applied to natural resource questions. Further assistance can be obtained by contacting Nature Conservancy Ecologist, [Randy Swaty](mailto:rswaty@tnc.org).
 
 <h3>Example questions to consider:</h3>
 
@@ -107,15 +107,18 @@ Do you want to see your landscape in a similar format? [Get in touch](https://la
 
 <h2>Step 1</h2>
 
-![](images/2.png){width=50%}
+![](images/2.png){width=50% fig-alt="Flow chart with 4 steps, listed from step 1 to step 4: step 1: Obtain shapefile for area of interest, 2: download LANDFIRE data, clip to area of interest, 3. build attributes, calculate acres / BpS acres / EVT, etc. 4. Write files i.e. tiffs, .csv & make maps"}
 <br>
 
 <h2>Step 2</h2>
 <br>
 
 
-![](images/1.png){width=50%}
 
+![](images/1.png){width=50% fig-alt="Flow chart with 4 steps, listed from step 1 to step 4: step 1: create prject in R studio, link to GitHub, 2: import data, maps to web report directory. 3: customize, run check Quarto files (incl. all data visualizations). 4: build, deploy website to GitHub, QA/QC"}
+
+
+<br>
 <h2>LANDFIRE Products Used</h2>
 
 * [Biophysical Settings Spatial Data](https://landfire.gov/vegetation/bps) and [Reference Conditions Table](https://landfire.gov/vegetation/bps-models)
@@ -161,6 +164,6 @@ The Nature Conservancy (TNC) is a Major Partner in the [LANDFIRE Program](https:
 
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="images/R.png" alt="Image 1" style="width: 38%;">
-  <img src="images/tnc.png" alt="Image 2" style="width: 38%;">
+  <img src="images/R.png" alt="LANDFIRE Logo" style="width: 38%;">
+  <img src="images/tnc.png" alt="Nature Conservancy Logo" style="width: 38%;">
 </div>
