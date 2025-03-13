@@ -84,7 +84,7 @@ LANDFIRE provides complete, landscape-scale products using standardized legends 
 
 <h3>Why Does This Matter?</h3>
 
-Natural resource professionals need versatile, current and continuous data to support their analysis decisions. These assessments are just a sample of what is possible when LANDFIRE products are creatively applied to natural resource questions. Further assistance can be obtained by contacting Nature Conservancy Ecologist, [Randy Swaty](mailto:rswaty@tnc.org).
+Natural resource professionals need versatile, current and continuous data to support their analysis decisions. These assessments are just a sample of what is possible when LANDFIRE products are creatively applied to natural resource questions. Further assistance with assessments can be obtained by contacting Nature Conservancy Ecologist, [Randy Swaty](mailto:rswaty@tnc.org). For technical questions about LANDFIRE products reach out to the [LANDFIRE Helpdesk](https://landfire.gov/contact).
 
 <h3>Example questions to consider:</h3>
 
@@ -135,17 +135,21 @@ Do you want to see your landscape in a similar format? [Get in touch](https://la
 
 [LANDFIRE](https://landfire.gov/) (Landscape Fire and Resource Management Planning Tools) is a shared program between the U.S. Department of Agriculture Forest Service Fire and Aviation branch and the U.S. Department of the Interior. LANDFIRE provides 25+ national landscape-scale geo-spatial products, 950 vegetation models, and a suite of tools that support all-lands planning, management, and operations. Included in the product suite are current and historic conditions including ecosystem dynamics models that can be used for conservation, fire planning, and landscape management decisions.
 
-<h2>The Nature Conservancy</h2>
+<h2>Principal Partners</h2>
 
-The Nature Conservancy (TNC) is a Major Partner in the [LANDFIRE Program](https://landfire.gov/) supported by a cooperative agreement through USDA Forest Service. TNC’s LANDFIRE Team works closely with the LANDFIRE Business Leads, program staff, and other partners to provide support to LANDFIRE and the user community by:
+U.S. Department of the Interior & U.S. Department of Agriculture Forest Service
 
-* Helping users understand the strengths, weaknesses, and appropriate uses of LANDFIRE products.
 
-* Locating, obtaining, and using geospatial data, tools, and models for fire and natural resource management, planning, and implementation.
+<h2>Major Partners</h2>
 
-* Identifying and comparing management priorities, evaluating threats to ecosystems, and exploring outcomes under alternative management scenarios.
+U.S. DOI USGS Earth Resources Observation and Science (EROS) Center; The Nature Conservancy (TNC)*; National Gap Analysis Program (GAP); USDA FS Rocky Mountain Research Station (RMRS); USDA Forest Service Forest Inventory and Analysis (FIA); U.S. Bureau of Land Management (BLM-AIM); National Land Cover Database (NLCD); Natural Resources Conservation Service – National Resources Inventory (NRCS-NRI)
 
-<br>
+\* TNC is a Major Partner in the LANDFIRE Program supported by a cooperative agreement through USDA Forest Service. TNC’s LANDFIRE Team works closely with the LANDFIRE Business Leads, program staff, and other partners to provide support to
+LANDFIRE and the user community.
+
+
+
+
 
 <h2>Questions? LANDFIRE is here to help</h2>
 
