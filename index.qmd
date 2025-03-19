@@ -63,12 +63,12 @@ map
 ```
 
 ## Column 2 {width=40%}
+![](images/R.png){width=40% fig-alt="LANDFIRE logo"}
+<h3>LANDFIRE Connects the Dots</h3>
 
-<h3>What Can We Learn?</h3>
+Using [LANDFIRE](https://landfire.gov/) to investigate your landscape provides comprehensive, up-to-date and standardized data that can advance our understanding of current ecosystem conditions and historical disturbances, while also supporting informed natural resource management decisions.
 
-LANDFIRE-Powered Landscape Assessments allow users to start exploring trends, landscape conversions and natural resource management options. 
-
-Based on current [LANDFIRE Products,](https://landfire.gov/) these assessments provide a starting point for future analysis and can help users understand the context of current ecosystem conditions and the role of disturbances within the historical context of these landscapes.
+Based on current [LANDFIRE Products,](https://landfire.gov/) these landscape assessments provide a starting point for future analysis and can help users understand the context of current ecosystem conditions and the role of disturbances within the historical context of these landscapes.
 
 <h3>Getting Started</h3>
 
