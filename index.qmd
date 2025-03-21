@@ -94,7 +94,26 @@ Natural resource professionals need versatile, current and continuous data to su
 
 
 
-# Input Data and Process  {orientation="columns" scrolling="false"}
+# LANDFIRE Products  {orientation="columns" scrolling="false"}
+![](images/R.png){width=20% fig-alt="LANDFIRE logo"}
+<h2>LANDFIRE Products Used</h2>
+
+* [Biophysical Settings Spatial Data](https://landfire.gov/vegetation/bps): BpS data represents the vegetation that may have been dominant on the landscape prior to European colonization of North America and is based on both the current biophysical environment and an approximation of the historical disturbance regime
+* [Reference Conditions Table](https://landfire.gov/vegetation/bps-models): Reference Conditions table is a tool used to describe the historical conditions of ecosystems, including vegetation types, fire regimes, and ecological processes
+* [Existing Vegetation Cover (EVC)](https://landfire.gov/vegetation/evc): Existing Vegetation Cover (EVC) - represents the vertically projected percent cover of the live canopy layer for a 30-m cell
+* [Existing Vegetation Height (EVH)](https://landfire.gov/vegetation/evh): Existing Vegetation Height (EVH) - represents the average height of the dominant vegetation for a 30-m cell
+* [Existing Vegetation Type](https://landfire.gov/vegetation/evt): Existing Vegetation Type (EVT) - represents the current distribution of the terrestrial ecological systems classification, developed by NatureServe for the western hemisphere, through 2016
+* [Succession Classes](https://landfire.gov/vegetation/sclass): Succession Class data categorizes current vegetation composition and structure into different successional classes based on the Biophysical Settings model
+
+<h2>Get LANDFIRE Data</h2>
+Many options exist for accessing LANDFIRE data:
+
+* [LANDFIRE Map Viewer](https://www.landfire.gov/viewer): Use the LF Map viewer to download your specific area of interest by product year
+* [Full Extent Downloads](https://landfire.gov/data/FullExtentDownloads): A one-stop-shop for downloading the full extent of any LANDFIRE layer
+* [Stream Data using the LANDFIRE Product Service (LFPS)](https://lfps.usgs.gov/arcgis/rest/services/LandfireProductService/GPServer): Use the LFPS service to retrieve specific layers of interest resulting in a multi-band geotiff file
+* [LANDFIRE Image Service](https://lfps.usgs.gov/arcgis/rest/services): Use this option to view, query, and analyze LANDFIRE data directly through web-based mapping applications and GIS software
+* [LANDFIRE WMS/WCS](https://landfire.gov/data/lf_stream): Use this option to "stream" LANDFIRE data without needing to download it to your computer.
+*[ArcGIS Online](https://usgs.maps.arcgis.com/): Use this option to interact with an analyze LANDFIRE datasets through ArcGIS Online's web-based platform
 
 <h2>Landscape Assessment Process</h2>
 
@@ -116,21 +135,10 @@ Do you want to see your landscape in a similar format? [Get in touch](https://la
 
 
 ![](images/1.png){width=50% fig-alt="Flow chart with 4 steps, listed from step 1 to step 4: step 1: create prject in R studio, link to GitHub, 2: import data, maps to web report directory. 3: customize, run check Quarto files (incl. all data visualizations). 4: build, deploy website to GitHub, QA/QC"}
-
-
 <br>
-<h2>LANDFIRE Products Used</h2>
-
-* [Biophysical Settings Spatial Data](https://landfire.gov/vegetation/bps) and [Reference Conditions Table](https://landfire.gov/vegetation/bps-models)
-* [Existing Vegetation Cover (EVC)](https://landfire.gov/vegetation/evc)
-* [Existing Vegetation Height (EVH)](https://landfire.gov/vegetation/evh)
-* [Existing Vegetation Type](https://landfire.gov/vegetation/evt)
-* [Succession Classes](https://landfire.gov/vegetation/sclass)
-
-
-
 
 # About  {orientation="columns" scrolling="false"}
+![](images/R.png){width=20% fig-alt="LANDFIRE logo"}
 <h2>LANDFIRE</h2>
 
 [LANDFIRE](https://landfire.gov/) (Landscape Fire and Resource Management Planning Tools) is a shared program between the U.S. Department of Agriculture Forest Service Fire and Aviation branch and the U.S. Department of the Interior. LANDFIRE provides 25+ national landscape-scale geo-spatial products, 950 vegetation models, and a suite of tools that support all-lands planning, management, and operations. Included in the product suite are current and historic conditions including ecosystem dynamics models that can be used for conservation, fire planning, and landscape management decisions.
@@ -143,6 +151,10 @@ U.S. Department of the Interior & U.S. Department of Agriculture Forest Service
 <h2>Major Partners</h2>
 
 U.S. DOI USGS Earth Resources Observation and Science (EROS) Center; The Nature Conservancy (TNC)*; National Gap Analysis Program (GAP); USDA FS Rocky Mountain Research Station (RMRS); USDA Forest Service Forest Inventory and Analysis (FIA); U.S. Bureau of Land Management (BLM-AIM); National Land Cover Database (NLCD); Natural Resources Conservation Service – National Resources Inventory (NRCS-NRI)
+<br>
+
+![](images/tnc.png){width=15% fig-alt="LANDFIRE logo"}
+<br>
 
 \* TNC is a Major Partner in the LANDFIRE Program supported by a cooperative agreement through USDA Forest Service. TNC’s LANDFIRE Team works closely with the LANDFIRE Business Leads, program staff, and other partners to provide support to
 LANDFIRE and the user community.
@@ -164,10 +176,3 @@ LANDFIRE and the user community.
 * See how others are [putting LANDFIRE products to work](https://arcg.is/1jmKm90)
 
 * [Join the LANDFIRE Newsletter 2-min read](http://eepurl.com/cajG91)
-
-
-
-<div style="display: flex; justify-content: space-between;">
-  <img src="images/R.png" alt="LANDFIRE Logo" style="width: 38%;">
-  <img src="images/tnc.png" alt="Nature Conservancy Logo" style="width: 38%;">
-</div>
