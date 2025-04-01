@@ -64,11 +64,14 @@ map
 
 ## Column 2 {width=40%}
 ![](images/R.png){width=40% fig-alt="LANDFIRE logo"}
+<h3>Why this Site?</h3>
+This site showcases landscape assessments completed across the United States using [LANDFIRE Products](https://landfire.gov/). By sharing these examples, the [LANDFIRE Program](https://landfire.gov/) aims to provide insights and ideas for your own landscape assessments. If you conduct a new assessment, please [let us know](mailto:rswaty@tnc.org) as we may be interested in adding it to this site. You can use these assessments as a foundation for building your own analyses. 
+
 <h3>LANDFIRE Connects the Dots</h3>
 
-Using [LANDFIRE](https://landfire.gov/) to investigate your landscape provides comprehensive, up-to-date and standardized data that can advance our understanding of current ecosystem conditions and historical disturbances, while also supporting informed natural resource management decisions.
+Using [LANDFIRE](https://landfire.gov/) to investigate your landscape provides comprehensive, up-to-date and standardized data that can advance your and others' understanding of current ecosystem conditions and historical disturbances, while also supporting informed natural resource management decisions.
 
-Based on current [LANDFIRE Products,](https://landfire.gov/) these landscape assessments provide a starting point for future analysis and can help users understand the context of current ecosystem conditions and the role of disturbances within the historical context of these landscapes.
+Based on current [LANDFIRE Products,](https://landfire.gov/) these landscape assessments provide tangible, real-life examples of how other people have applied LANDFIRE and serve as a starting point for future analyses. Assessments like these can help users understand the context of current ecosystem conditions, the historical role of disturbances, and inform future natural resource management decisions. 
 
 <h3>Getting Started</h3>
 
