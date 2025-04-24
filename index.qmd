@@ -184,8 +184,6 @@ LANDFIRE and the user community.
 
 * Ask the [LANDFIRE Helpdesk](mailto:helpdesk@landfire.gov)
 
-* Search the [LANDFIRE Helpdesk Dashboard](https://landfire.gov/helpdesk) (see what others are asking and find solutions to common problems)
-
 * Search (& subscribe to) the [LANDFIRE YouTube Channel](https://www.youtube.com/@LANDFIREvideo) (see tutorials, Office Hours, quick demonstrations)
 
 * See how others are [putting LANDFIRE products to work](https://arcg.is/1jmKm90)
