@@ -3,9 +3,9 @@ title: "LANDFIRE-Powered Landscape Assessments"
 format: dashboard
 
 
-
 metadata-files: 
   - _extra.yml
+
 ---
 
 
