@@ -1,0 +1,17 @@
+
+
+
+include-in-header: |
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JE5SY1XMMM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JE5SY1XMMM');
+  </script>
+
+
+
+
+
+css: "/styles.css"
