@@ -35,22 +35,20 @@ assessments_shp <- st_read("data/assessments.shp") %>%
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 
-
 # Load the shapefile
 assessments_shp <- st_read("data/assessments.shp", quiet = TRUE) %>%
   st_transform(crs = 4326) %>%
   select(c(org_nam, geometry))
 
 # Read assessments.csv into R
-assessments_attributes <- read.csv("data/assessements.csv")
+assessments_attributes <- read.csv("data/assessments.csv")
+
 
 # Perform the join
 assessments_shp <- dplyr::left_join(assessments_shp, assessments_attributes, by = 'org_nam')
 
 # Ensure drw_rdr is a numeric vector
 assessments_shp$drw_rdr <- as.numeric(as.character(assessments_shp$drw_rdr))
-
-
 
 # Order your polygons in descending order based on the drw_rdr column
 assessments_shp <- assessments_shp[order(-assessments_shp$drw_rdr), ]
@@ -74,6 +72,7 @@ for (i in 1:nrow(assessments_shp)) {
         "<b>Landscape:</b> ", dsply_n, "<br>",
         "<b>Click for full report:</b> <a href='", link, "' target='_blank'>", link, "</a>"
       ),
+      group = assessments_shp$dsply_n[i], # Assign group based on dsply_n
       options = pathOptions(zIndex = assessments_shp$drw_rdr[i]) # Use zIndex to control order
     )
 }

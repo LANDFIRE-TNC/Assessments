@@ -1,27 +1,23 @@
 
 
-
-
-library(dplyr)
 library(sf)
+library(dplyr)
 library(leaflet)
+library(htmlwidgets)
 
 # Load the shapefile
-assessments_shp <- st_read("data/assessments.shp") %>%
+assessments_shp <- st_read("data/assessments.shp", quiet = TRUE) %>%
   st_transform(crs = 4326) %>%
   select(c(org_nam, geometry))
 
 # Read assessments.csv into R
-assessments_attributes <- read.csv("data/assessements.csv")
+assessments_attributes <- read.csv("data/assessments.csv")
 
 # Perform the join
 assessments_shp <- dplyr::left_join(assessments_shp, assessments_attributes, by = 'org_nam')
 
 # Ensure drw_rdr is a numeric vector
 assessments_shp$drw_rdr <- as.numeric(as.character(assessments_shp$drw_rdr))
-
-# Check the structure of assessments_shp
-str(assessments_shp)
 
 # Order your polygons in descending order based on the drw_rdr column
 assessments_shp <- assessments_shp[order(-assessments_shp$drw_rdr), ]
@@ -45,21 +41,53 @@ for (i in 1:nrow(assessments_shp)) {
         "<b>Landscape:</b> ", dsply_n, "<br>",
         "<b>Click for full report:</b> <a href='", link, "' target='_blank'>", link, "</a>"
       ),
+      group = assessments_shp$dsply_n[i], # Assign group based on dsply_n
       options = pathOptions(zIndex = assessments_shp$drw_rdr[i]) # Use zIndex to control order
     )
 }
 
-# Add layers control
+# Create custom checkboxes for layer control
+layer_groups <- unique(assessments_shp$dsply_n)
+checkboxes <- paste0('<input type="checkbox" class="layer-checkbox" id="', layer_groups, '" checked> ', layer_groups, '<br>', collapse = '')
+
+# Add the checkboxes to the map
 map <- map %>%
-  addLayersControl(
-    overlayGroups = unique(assessments_shp$dsply_n),
-    options = layersControlOptions(collapsed = TRUE, position = "topright")
-  ) %>%
+  addControl(html = paste0('<div id="layer-control">', checkboxes, '</div>'), position = "topright") %>%
   setView(lng = -82.5, lat = 37, zoom = 4) %>%
   htmlwidgets::onRender("
     function() {
-      $('.leaflet-control-layers-overlays').prepend('<label style=\"text-align:center\">Completed Assessments</label>');
+      // Function to toggle layer visibility
+      $('.layer-checkbox').change(function() {
+        var map = this._map;
+        var layerGroup = $(this).attr('id');
+        if (this.checked) {
+          map.eachLayer(function(layer) {
+            if (layer.options && layer.options.group === layerGroup) {
+              map.addLayer(layer);
+            }
+          });
+        } else {
+          map.eachLayer(function(layer) {
+            if (layer.options && layer.options.group === layerGroup) {
+              map.removeLayer(layer);
+            }
+          });
+        }
+      });
+
+      // Add select/deselect all button
+      $('#layer-control').prepend('<button id=\"toggle-all\" style=\"display:block; margin:auto;\">Select/Deselect All</button>');
+      
+      // Function to toggle all layers
+      $('#toggle-all').click(function() {
+        var allChecked = $('.layer-checkbox:checked').length === $('.layer-checkbox').length;
+        $('.layer-checkbox').each(function() {
+          this.checked = !allChecked;
+          $(this).trigger('change');
+        });
+      });
     }
   ")
 
 map
+
