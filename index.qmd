@@ -17,6 +17,7 @@ library(sf)
 library(leaflet.extras)
 library(htmltools)
 library(tidyverse)
+library(htmlwidgets)
 
 
 # Load the shapefile
@@ -92,7 +93,7 @@ map <- map %>%
 
 map
 
-
+saveWidget(map, file = "assessments_map.html")
 
 ```
 
