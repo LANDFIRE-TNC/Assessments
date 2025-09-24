@@ -1,6 +1,13 @@
 ---
 title: "LANDFIRE-Powered Landscape Assessments"
-format: dashboard
+format: 
+  dashboard:
+    logo: images/LANDFIRE.png
+    nav-buttons: 
+      - icon: linkedin
+        href: https://www.linkedin.com/company/landfire/?viewAsMember=true
+      - icon: github
+        href: https://github.com/bcknr/rlandfire/
 
 
 metadata-files: 
@@ -98,7 +105,11 @@ saveWidget(map, file = "assessments_map.html")
 ```
 
 ## Column 2 {width=40%}
-![](images/R.png){width=40% fig-alt="LANDFIRE logo"}
+
+<div style="text-align: right; padding-top: 20 px; padding-bottom: 50px;">
+![](images/logosall.png){width=40% fig-alt="LANDFIRE logo"}
+</div>
+
 <h3>Why this Site?</h3>
 This site showcases landscape assessments completed across the United States using [LANDFIRE Products](https://landfire.gov/). By sharing these examples, the [LANDFIRE Program](https://landfire.gov/) aims to provide insights and ideas for your own landscape assessments. If you conduct a new assessment, please [let us know](mailto:rswaty@tnc.org) as we may be interested in adding it to this site. You can use these assessments as a foundation for building your own analyses. 
 
