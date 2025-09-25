@@ -4,10 +4,11 @@ format:
   dashboard:
     logo: images/LANDFIRE.png
     nav-buttons: 
+      - icon: youtube
+        href: https://www.youtube.com/@LANDFIREvideo
       - icon: linkedin
         href: https://www.linkedin.com/company/landfire/?viewAsMember=true
-      - icon: github
-        href: https://github.com/bcknr/rlandfire/
+      
 
 
 metadata-files: 
@@ -109,7 +110,10 @@ saveWidget(map, file = "assessments_map.html")
 <div style="text-align: right; padding-top: 20 px; padding-bottom: 50px;">
 ![](images/logosall.png){width=40% fig-alt="LANDFIRE logo"}
 </div>
+<br>
 
+<br>
+<br>
 <h3>Why this Site?</h3>
 This site showcases landscape assessments completed across the United States using [LANDFIRE Products](https://landfire.gov/). By sharing these examples, the [LANDFIRE Program](https://landfire.gov/) aims to provide insights and ideas for your own landscape assessments. If you conduct a new assessment, please [let us know](mailto:rswaty@tnc.org) as we may be interested in adding it to this site. You can use these assessments as a foundation for building your own analyses. 
 
@@ -144,7 +148,7 @@ Natural resource professionals need versatile, current and continuous data to su
 
 
 # LANDFIRE Products  {orientation="columns" scrolling="false"}
-![](images/R.png){width=20% fig-alt="LANDFIRE logo"}
+![](images/logosall.png){width=20% fig-alt="LANDFIRE logo"}
 <h2>LANDFIRE Products Used</h2>
 
 * [Biophysical Settings Spatial Data](https://landfire.gov/vegetation/bps): BpS data represents the vegetation that may have been dominant on the landscape prior to European colonization of North America and is based on both the current biophysical environment and an approximation of the historical disturbance regime
@@ -187,30 +191,27 @@ Do you want to see your landscape in a similar format? [Get in touch](https://la
 <br>
 
 # About  {orientation="columns" scrolling="false"}
-![](images/R.png){width=20% fig-alt="LANDFIRE logo"}
+![](images/logosall.png){width=20% fig-alt="LANDFIRE logo"}
 <h2>LANDFIRE</h2>
 
-[LANDFIRE](https://landfire.gov/) (Landscape Fire and Resource Management Planning Tools) is a shared program between the U.S. Department of Agriculture Forest Service Fire and Aviation branch and the U.S. Department of the Interior. LANDFIRE provides 25+ national landscape-scale geo-spatial products, 950 vegetation models, and a suite of tools that support all-lands planning, management, and operations. Included in the product suite are current and historic conditions including ecosystem dynamics models that can be used for conservation, fire planning, and landscape management decisions.
+[LANDFIRE](https://landfire.gov/) (Landscape Fire and Resource Management Planning Tools)  is a shared interagency wildland fire management data program across the United States and Territories. Leadership, management, and oversight are through the U.S. Department of Agriculture Forest Service - Fire and Aviation Management and the U.S. Department of the Interior – Office of Wildland Fire.
+
+LANDFIRE provides more than twenty landscape-scale geospatial products of biological and ecological data, including data such as (900+) vegetation types and (13/40) fire behavior fuel models that support all-lands planning, fire and natural resources management, operations, analyses and assessments. 
 
 <h2>Principal Partners</h2>
 
-U.S. Department of the Interior & U.S. Department of Agriculture Forest Service
+U.S. Department of the Interior (DOI) & U.S. Department of Agriculture Forest Service (USFS)
 
 
-<h2>Major Partners</h2>
+<h2>Project Team</h2>
 
-U.S. DOI USGS Earth Resources Observation and Science (EROS) Center; The Nature Conservancy (TNC)*; National Gap Analysis Program (GAP); USDA FS Rocky Mountain Research Station (RMRS); USDA Forest Service Forest Inventory and Analysis (FIA); U.S. Bureau of Land Management (BLM-AIM); National Land Cover Database (NLCD); Natural Resources Conservation Service – National Resources Inventory (NRCS-NRI)
-<br>
+USGS EROS, EROS Technical Support Services Contract (KBR), The Nature Conservancy*, USDA Forest Service (Rocky Mountain Research Station) RMRS, and Forest Inventory & Analysis (FIA)
 
-![](images/tnc.png){width=15% fig-alt="LANDFIRE logo"}
-<br>
+*TNC is a Major Partner in the LANDFIRE Program supported by a cooperative agreement through USDA Forest Service. TNC’s LANDFIRE Team works closely with the LANDFIRE Business Leads, program staff, and other partners to provide support to LANDFIRE and the user community.
 
-\* TNC is a Major Partner in the LANDFIRE Program supported by a cooperative agreement through USDA Forest Service. TNC’s LANDFIRE Team works closely with the LANDFIRE Business Leads, program staff, and other partners to provide support to
-LANDFIRE and the user community.
+<h2>Partners</h2>
 
-
-
-
+USGS Gap Analysis, USGS National Land Imaging Program 
 
 <h2>Questions? LANDFIRE is here to help</h2>
 
@@ -222,4 +223,6 @@ LANDFIRE and the user community.
 
 * See how others are [putting LANDFIRE products to work](https://arcg.is/1jmKm90)
 
-* [Join the LANDFIRE Newsletter 2-min read](http://eepurl.com/cajG91)
+* [Check out LANDFIRE 101](https://landfire-tnc.github.io/LANDFIRE_101/) (your go-to resource for learning how to best apply and use LANDFIRE products)
+
+* [Sign up for the LANDFIRE Newsletter 2-min read](https://landfire.us9.list-manage.com/subscribe?u=25aeabb346a09aaf1c528f007&id=2f025aaae2)
